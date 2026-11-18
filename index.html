@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>viceport — port não-oficial de GTA VI para PC</title>
+<title>viceport — unofficial GTA VI PC port</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
@@ -60,13 +60,13 @@
 
 <div class="wrap">
 <div>
-  <div class="stats"><span>★ <b>127k</b> stars</span><span>⑂ <b>21.4k</b> forks</span><span>👁 <b>3.8k</b> watching</span><span>🕒 último commit há 12 minutos</span></div>
+  <div class="stats"><span>★ <b>127k</b> stars</span><span>⑂ <b>21.4k</b> forks</span><span>👁 <b>3.8k</b> watching</span><span>🕒 last commit 12 minutes ago</span></div>
 
   <div class="box">
     <h4><span>README.md</span><span>main</span></h4>
     <div class="readme">
       <h1>viceport</h1>
-      <p>Camada de compatibilidade que roda o dump de GTA VI (PS5) no Windows, traduzindo as chamadas da GPU para DirectX 12 / Vulkan.</p>
+      <p>Compatibility layer that runs the GTA VI (PS5) dump on Windows by translating GPU calls to DirectX 12 / Vulkan.</p>
       <div class="badges">
         <div class="badge"><i>build</i><em style="background:#3fb950">passing</em></div>
         <div class="badge"><i>release</i><em style="background:#5b9dff">v0.9.2</em></div>
@@ -75,69 +75,69 @@
       </div>
 
       <h2>Status</h2>
-      <p>Campanha jogável do começo ao fim. Build testada em mais de 40 configurações de PC pela comunidade.</p>
+      <p>Campaign is playable from start to finish. Build tested by the community on 40+ PC configurations.</p>
       <table>
-        <tr><th>Recurso</th><th>Status</th></tr>
-        <tr><td>Campanha + troca entre Jason e Lucia</td><td>✅ completa</td></tr>
-        <tr><td>Sistema de combustível / postos</td><td>✅ funcionando</td></tr>
-        <tr><td>Novo sistema de procurado</td><td>✅ funcionando</td></tr>
-        <tr><td>Legendas PT-BR</td><td>✅ funcionando</td></tr>
-        <tr><td>Áudio original (inglês)</td><td>✅ funcionando</td></tr>
-        <tr><td>Scanner WAINK (roubo de carro)</td><td>⚠️ crash ao escanear carros com chave digital</td></tr>
-        <tr><td>Direção em 1ª pessoa</td><td>⚠️ retrovisores piscam em DX12</td></tr>
-        <tr><td>Academia / mudança de corpo</td><td>⚠️ progresso às vezes não salva</td></tr>
-        <tr><td>Redes sociais in-game</td><td>⚠️ feed carrega vazio</td></tr>
+        <tr><th>Feature</th><th>Status</th></tr>
+        <tr><td>Campaign + Jason/Lucia character switching</td><td>✅ complete</td></tr>
+        <tr><td>Fuel system / gas stations</td><td>✅ working</td></tr>
+        <tr><td>New wanted system</td><td>✅ working</td></tr>
+        <tr><td>Original audio (English)</td><td>✅ working</td></tr>
+        <tr><td>Subtitles (all languages incl. PT-BR)</td><td>✅ working</td></tr>
+        <tr><td>WAINK scanner (car theft)</td><td>⚠️ crashes when scanning cars with digital keys</td></tr>
+        <tr><td>First-person driving</td><td>⚠️ mirrors flicker on DX12</td></tr>
+        <tr><td>Gym / body changes</td><td>⚠️ progress sometimes doesn't save</td></tr>
+        <tr><td>In-game social media</td><td>⚠️ feed loads empty</td></tr>
         <tr><td>DLSS / FSR</td><td>⚠️ experimental</td></tr>
-        <tr><td>Online</td><td>❌ desativado</td></tr>
+        <tr><td>Online</td><td>❌ disabled</td></tr>
       </table>
 
-      <h2>Problemas conhecidos do jogo original</h2>
-      <p>Estes bugs também acontecem no PS5/Xbox e <b>não</b> são causados pelo port. Não abra issue sobre eles.</p>
+      <h2>Known upstream issues</h2>
+      <p>These bugs also happen on PS5/Xbox and are <b>not</b> caused by the port. Please don't open issues about them.</p>
       <ul>
-        <li>NPCs andando contra paredes perto de prédios em Leonida</li>
-        <li>Objetos flutuando na safehouse depois de trocar entre Jason e Lucia (ex.: xícara de café)</li>
-        <li>Pop-in nas roupas do Jason e da Lucia durante o gameplay</li>
-        <li>Personagens atravessando móveis (ex.: sofá) em algumas cenas</li>
-        <li>Sem animação de abrir a porta ao entrar em aviões: o personagem atravessa a fuselagem e senta direto</li>
-        <li>Raros casos de cair através do mapa</li>
-        <li>Quedas de FPS em momentos de muita ação</li>
+        <li>NPCs walking into walls near buildings across Leonida</li>
+        <li>Floating objects in the safehouse after switching between Jason and Lucia (e.g. a coffee cup)</li>
+        <li>Clothing pop-in on Jason and Lucia during gameplay</li>
+        <li>Characters clipping through furniture (e.g. couches) in some scenes</li>
+        <li>No door animation when boarding planes: the character clips through the fuselage straight into the seat</li>
+        <li>Rare fall-through-map cases</li>
+        <li>Frame drops during high-action moments</li>
       </ul>
 
       <h2>Changelog v0.9.2</h2>
       <ul>
-        <li>Corrigido crash ao entrar em Port Gellhorn</li>
-        <li>Corrigido NPCs em T-pose na praia de Vice City</li>
-        <li>Shader cache ~30% mais rápido na primeira execução</li>
-        <li>Mira em câmera lenta agora funciona no mouse</li>
+        <li>Fixed crash when entering Port Gellhorn</li>
+        <li>Fixed T-posing NPCs on Vice City beaches</li>
+        <li>~30% faster shader cache build on first launch</li>
+        <li>Slow-motion aiming now works with mouse</li>
       </ul>
 
-      <h2>Requisitos testados</h2>
+      <h2>Tested requirements</h2>
       <ul>
         <li>Windows 10/11 x64</li>
-        <li>GPU com suporte a DX12 (RTX 2060 / RX 6600 para 1080p 60fps)</li>
-        <li>16 GB de RAM, ~230 GB livres em SSD</li>
+        <li>DX12-capable GPU (RTX 2060 / RX 6600 for 1080p 60fps)</li>
+        <li>16 GB RAM, ~230 GB free on SSD</li>
       </ul>
 
-      <h2>Instalação</h2>
-      <p>Baixe o pacote da <a href="#" class="go">release mais recente</a>, extraia e rode:</p>
+      <h2>Installation</h2>
+      <p>Download the package from the <a href="#" class="go">latest release</a>, extract it and run:</p>
       <pre>viceport.exe --install --lang pt-BR</pre>
-      <p>Na primeira execução os shaders são compilados (5 a 10 min).</p>
+      <p>Shaders are compiled on first launch (5–10 min).</p>
     </div>
   </div>
 </div>
 
 <aside class="side">
-  <h5>Sobre</h5>
-  <p>Port não-oficial de GTA VI para PC. Projeto da comunidade, sem fins lucrativos.</p>
+  <h5>About</h5>
+  <p>Unofficial PC port of GTA VI. Community project, non-profit.</p>
   <div class="rel">
     <h5>Releases <span class="pill">14</span></h5>
     <div class="box">
       <h4><span>🏷 v0.9.2 <span class="latest">Latest</span></span></h4>
       <div class="asset go">viceport-v0.9.2-win64.zip <span>2.1 GB</span></div>
-      <div class="asset go">viceport-data-pack.7z <span>207 GB</span></div>
+      <div class="asset go">viceport-data-pack.zip <span>207 GB</span></div>
       <div class="asset go">Source code (zip)</div>
     </div>
-    <button class="dlbtn go">Baixar v0.9.2</button>
+    <button class="dlbtn go">Download v0.9.2</button>
   </div>
 </aside>
 </div>
